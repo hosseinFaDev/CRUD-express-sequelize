@@ -5,17 +5,17 @@ const lesson = require('./models/lessons');
 const router = require('./routes/routesAPI');
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
 
 
 
-//////******//////for useing web interface uncomment this//////******//////
+//////***** for useing web interface uncomment this ******//////
 //for insert data go to this link => http://localhost:3000/api/insert
 //for read data go to this link   => http://localhost:3000/api/read
 //for update data go to this link => http://localhost:3000/api/update
 //for delete data go to this link => http://localhost:3000/api/delete
 
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
 app.use('/api',router);
 
 
@@ -35,8 +35,8 @@ lesson.sync().then(() => {
 
 
 
-//////******//////for useing CLI interface uncomment this///////******//////
-/////next 5 line code , just run 1 time for sync and then comment it and
+//////******//////for useing code base interface uncomment this///////******//////
+/////next 5 line code , just run 1 time for sync and then comment it and go for CRUD
 
 // lesson.sync({ force: true }).then(() => {
 //     // Now the `lessons` table in the database corresponds to the model definition
