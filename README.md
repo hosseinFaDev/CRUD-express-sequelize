@@ -1,7 +1,7 @@
 # CRUD-express-sequelize
 # **this simple app has 2 interface code base and web base**
 
-this app based on MVC architecture
+**this app based on MVC architecture**
 
 **default is on web base but you can uncomment code base and use it( in app.js file )**
 
