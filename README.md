@@ -13,4 +13,5 @@
  - for delete data go to this link => http://localhost:3000/api/delete
 
 **remember you need to change configs for you own database in( config/config.json )**
+
 **remember for user code base interface just one time run sync table( in app.js line 41 to 44 )**
